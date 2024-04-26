@@ -1,0 +1,15 @@
+{
+  "contentsDeltaUri": "gs://shopmate-storage",
+  "config": {
+    "dimensions": 768,
+    "approximateNeighborsCount": 5,
+    "distanceMeasureType": "SQUARED_L2_DISTANCE",
+    "shardSize": "SHARD_SIZE_SMALL",
+    "algorithm_config": {
+      "treeAhConfig": {
+        "leafNodeEmbeddingCount": 100,
+        "leafNodesToSearchPercent": 50
+      }
+    }
+  }
+}
