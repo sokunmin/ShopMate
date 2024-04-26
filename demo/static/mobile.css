@@ -1,0 +1,66 @@
+#column2 {
+    width: 100%;
+    box-sizing: border-box;
+    margin: 20px 20px ;
+
+}
+
+#column2 {
+    position: relative;
+    /* background-image: url('background.jpeg'); 替換成您的背景圖片的URL */
+    background-color: #EAE6DF;
+    background-repeat: repeat; /* 背景圖片自動重複 */
+    background-size: auto; /* 背景圖片大小自適應 */
+
+    border: 20px solid #000;
+    border-radius: 40px ;
+}
+
+.message-container {
+    overflow-x: hidden; /* 隱藏水平滾動條 */
+    overflow-y: auto; /* 啟用垂直滾動條 */
+    height: 700px; /* 固定容器高度 */
+    margin-top: 100px
+    display: flex;
+    background: #EAE6DF;
+    border-radius: 10px;
+    flex-direction: column-reverse; /* 將訊息按垂直方向反向排列 */
+    padding-bottom: 10px; /* 添加底部間距以避免內容貼緊底部 */
+
+    padding: 5px;
+}
+
+.message {
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    max-width: 80%; /* 固定訊息寬度 */
+    word-wrap: break-word; /* 在長單詞或 URL 中斷字 */
+}
+    .message.sent {
+        background-color: #aaffaa; /* 綠色 */
+        text-align: left;
+        margin-left: 3em;
+    }
+    .message.received {
+        background-color: #ffffff; /* 白色 */
+        text-align: left;
+        margin-right: 3em;
+    }
+    input[type="text"] {
+        width: calc(100% - 80px);
+        padding: 10px;
+        border: none;
+        border-radius: 5px;
+        margin-top: 10px;
+    }
+    input[type="submit"] {
+        width: 50px;
+        padding: 10px;
+        border: none;
+        border-radius: 5px;
+        margin-top: 10px;
+        cursor: pointer;
+        background-color: #4caf50; /* 按鈕背景顏色 */
+        color: #ffffff;
+    }
